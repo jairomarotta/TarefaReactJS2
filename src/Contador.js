@@ -2,13 +2,13 @@ import React, {useState} from 'react';
 
 const Contador = props => {
  
-    const [channelState, setChannelState] = useState(0);
+    const [inputState, setInputState] = useState(0);
 
     return(
       <div>
           <p><b> Informe um texto: </b></p>  
-          <input type="text" onChange={() => setChannelState(channelState + 1)} title="Informe um texto"></input>
-          <p>Esse texto contém {channelState} caracteres.</p>
+          <input type="text" onChange={() => setInputState(inputState + 1)} title="Informe um texto"></input>
+          <p>Esse texto contém {inputState} caracteres.</p>
       </div>
     );
 }
